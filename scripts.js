@@ -7,8 +7,9 @@ const questions = [
             "Maintain altitude until engines restart",
             "Climb to a safe height and restart"
         ],
-        correctAnswer: 0, // index of the correct answer in the choices array
-        category: "Emergency"
+        correctAnswer: 0,
+        category: "Emergency",
+        qrhImage: "qrh_images/qrh_page_17.jpg" // Path to the QRH page image
     },
     {
         question: "What should the pilot do if the main rotor RPM low warning light illuminates?",
@@ -19,22 +20,23 @@ const questions = [
             "Land immediately"
         ],
         correctAnswer: 2,
-        category: "Malfunction"
+        category: "Malfunction",
+        qrhImage: "qrh_images/qrh_page_29.jpg"
     },
     {
         question: "What is the maximum allowable gross weight for the AW139?",
         choices: [
-            "6400 Kg.",
-            "7400 Kg.",
-            "6800 Kg.",
-            "7000 kg."
+            "12,500 lbs.",
+            "14,110 lbs.",
+            "15,000 lbs.",
+            "13,500 lbs."
         ],
         correctAnswer: 1,
-        category: "Limitation"
+        category: "Limitation",
+        qrhImage: "qrh_images/qrh_page_45.jpg"
     }
     // Add more questions as needed
 ];
-
 
 let currentQuestionIndex = 0;
 
