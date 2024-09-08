@@ -42,23 +42,59 @@ let currentQuestionIndex = 0;
 
 function loadNextQuestion() {
     if (currentQuestionIndex < questions.length) {
-        document.getElementById('question').textContent = questions[currentQuestionIndex].question;
+        const questionData = questions[currentQuestionIndex];
+        document.getElementById('question').textContent = questionData.question;
+
+        // Clear previous choices
+        const choicesContainer = document.getElementById('choices');
+        choicesContainer.innerHTML = '';
+
+        // Dynamically create radio buttons for the choices
+        questionData.choices.forEach((choice, index) => {
+            const choiceElement = document.createElement('div');
+            choiceElement.innerHTML = `
+                <input type="radio" name="quiz-choice" id="choice${index}" value="${index}">
+                <label for="choice${index}">${choice}</label>
+            `;
+            choicesContainer.appendChild(choiceElement);
+        });
+
         document.getElementById('result').textContent = "";
-        document.getElementById('answer').value = "";
         document.getElementById('next-button').style.display = "none";
         currentQuestionIndex++;
     } else {
         document.getElementById('question').textContent = "End of Quiz! You've completed all questions.";
-        document.getElementById('answer').style.display = "none";
+        document.getElementById('choices').style.display = "none";
         document.getElementById('next-button').style.display = "none";
     }
 }
 
 function checkAnswer() {
-    const userAnswer = document.getElementById('answer').value;
-    const correctAnswer = questions[currentQuestionIndex - 1].answer;
+    const selectedChoice = document.querySelector('input[name="quiz-choice"]:checked');
+    if (!selectedChoice) {
+        document.getElementById('result').textContent = "Please select an answer.";
+        return;
+    }
 
-    if (userAnswer.toLowerCase() === correctAnswer.toLowerCase()) {
+    const userAnswer = parseInt(selectedChoice.value);
+    const correctAnswer = questions[currentQuestionIndex - 1].correctAnswer;
+
+    if (userAnswer === correctAnswer) {
         document.getElementById('result').textContent = "Correct!";
     } else {
-        document.getElementById('
+        document.getElementById('result').textContent = `Incorrect! The correct answer was: ${questions[currentQuestionIndex - 1].choices[correctAnswer]}`;
+    }
+
+    // Show QRH image
+    const qrhImage = questions[currentQuestionIndex - 1].qrhImage;
+    if (qrhImage) {
+        document.getElementById('result').innerHTML += `<br><img src="${qrhImage}" alt="QRH Page" style="max-width: 100%;">`;
+    }
+
+    document.getElementById('next-button').style.display = "block";
+}
+
+window.onload = function() {
+    loadNextQuestion();
+};
+
