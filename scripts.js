@@ -1,21 +1,40 @@
 const questions = [
     {
         question: "What is the procedure for a double engine failure during flight?",
-        answer: "Autorotation entry and landing procedure",
+        choices: [
+            "Autorotation entry and landing procedure",
+            "Shut down engines and glide",
+            "Maintain altitude until engines restart",
+            "Climb to a safe height and restart"
+        ],
+        correctAnswer: 0, // index of the correct answer in the choices array
         category: "Emergency"
     },
     {
         question: "What should the pilot do if the main rotor RPM low warning light illuminates?",
-        answer: "Adjust the collective to maintain RPM within the safe operating range.",
+        choices: [
+            "Increase power",
+            "Reduce speed",
+            "Adjust the collective to maintain RPM",
+            "Land immediately"
+        ],
+        correctAnswer: 2,
         category: "Malfunction"
     },
     {
         question: "What is the maximum allowable gross weight for the AW139?",
-        answer: "14,110 lbs.",
+        choices: [
+            "6400 Kg.",
+            "7400 Kg.",
+            "6800 Kg.",
+            "7000 kg."
+        ],
+        correctAnswer: 1,
         category: "Limitation"
     }
-    // Add more questions here
+    // Add more questions as needed
 ];
+
 
 let currentQuestionIndex = 0;
 
