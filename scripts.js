@@ -26,10 +26,10 @@ const questions = [
     {
         question: "What is the maximum allowable gross weight for the AW139?",
         choices: [
-            "12,500 lbs.",
-            "14,110 lbs.",
-            "15,000 lbs.",
-            "13,500 lbs."
+            "7000 Kg.",
+            "6800 Kg.",
+            "6400 Kg.",
+            "7400 Kg."
         ],
         correctAnswer: 1,
         category: "Limitation",
