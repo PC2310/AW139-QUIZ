@@ -78,18 +78,6 @@ const questions = [
         qrhImage: "qrh_images/qrh_page_24.jpg"
     },
     {
-        question: "What is the emergency procedure for a double engine failure?",
-        choices: [
-            "Autorotation entry and landing",
-            "Increase collective and attempt engine restart",
-            "Climb to a safe altitude and glide",
-            "Shut down all electrical systems"
-        ],
-        correctAnswer: 0,
-        category: "Emergency",
-        qrhImage: "qrh_images/qrh_page_17.jpg"
-    },
-    {
         question: "What should the pilot do when the tail rotor drive fails?",
         choices: [
             "Enter autorotation and land as soon as possible",
