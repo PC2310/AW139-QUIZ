@@ -21,7 +21,7 @@ const questions = [
         ],
         correctAnswer: 2,
         category: "Malfunction",
-        qrhImage: "qrh_images/AW139-QRH_page (29).jpg"
+        qrhImage: "QRH images/AW139-QRH_page (29).jpg"
     },
     {
         question: "What is the maximum allowable gross weight for the AW139?",
@@ -33,7 +33,7 @@ const questions = [
         ],
         correctAnswer: 1,
         category: "Limitation",
-        qrhImage: "qrh_images/qrh_page_45.jpg"
+        qrhImage: "QRH images/qrh_page_45.jpg"
     },
     {
         question: "What is the correct response when a main gearbox oil temperature high warning occurs?",
@@ -45,7 +45,7 @@ const questions = [
         ],
         correctAnswer: 0,
         category: "Emergency",
-        qrhImage: "qrh_images/qrh_page_30A.jpg"
+        qrhImage: "QRH images/qrh_page_30A.jpg"
     },
     {
         question: "What action should be taken in case of a single engine failure in hover?",
