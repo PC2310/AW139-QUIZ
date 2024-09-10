@@ -35,9 +35,6 @@ const questions = [
         category: "Limitation",
         qrhImage: "qrh_images/qrh_page_45.jpg"
     },
-    const questions = [
-    // Add your previous questions here
-
     {
         question: "What is the correct response when a main gearbox oil temperature high warning occurs?",
         choices: [
