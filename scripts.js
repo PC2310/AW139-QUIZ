@@ -39,7 +39,7 @@ const questions = [
         ],
         correctAnswer: 0,
         category: "Limitation",
-        qrhImage: "RFM-Images/RFM-S90-1.jpg."
+        qrhImage: "RFM-Images/RFM-S90-1.jpg"
     },
     {
         question: "What is the correct response when a main gearbox oil temperature high warning occurs?",
