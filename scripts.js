@@ -9,7 +9,7 @@ const questions = [
         ],
         correctAnswer: 0,
         category: "Emergency",
-        qrhImage: "qrh_images/AW139-QRH_pages-to-jpg-0017.jpg" // Path to the QRH page image
+        qrhImage: "qrh_images/qrh_page_17.jpg" // Path to the QRH page image
     },
     {
         question: "What should the pilot do if the main rotor RPM low warning light illuminates?",
