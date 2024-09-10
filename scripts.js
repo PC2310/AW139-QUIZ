@@ -37,7 +37,7 @@ const questions = [
             "6400 Kg.",
             "7400 Kg."
         ],
-        correctAnswer: 1,
+        correctAnswer: 0,
         category: "Limitation",
         qrhImage: "RFM-Images/RFM-S90-1.jpg."
     },
