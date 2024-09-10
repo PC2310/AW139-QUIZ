@@ -283,7 +283,6 @@ const questions = [
     }
 ];
 
-
 let currentQuestionIndex = 0;
 
 function loadNextQuestion() {
@@ -341,6 +340,8 @@ function checkAnswer() {
 }
 
 window.onload = function() {
+    // Shuffle the questions before starting the quiz
+    shuffleArray(questions);
     loadNextQuestion();
 };
 
