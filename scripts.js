@@ -21,7 +21,7 @@ const questions = [
         ],
         correctAnswer: 2,
         category: "Malfunction",
-        qrhImage: "qrh_images/qrh_page_29.jpg"
+        qrhImage: "qrh_images/AW139-QRH_page (29).jpg"
     },
     {
         question: "What is the maximum allowable gross weight for the AW139?",
