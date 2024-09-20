@@ -198,16 +198,16 @@ const questions = [
         qrhImage: "QRH images/AW139-QRH_page (32).jpg"
     },
     {
-        question: "What is the maximum continuous rotor RPM in flight?",
+        question: "What is the maximum continuous rotor RPM in flight AEO?",
         choices: [
-            "106%",
-            "100%",
             "104%",
+            "100%",
+            "106%",
             "110%"
         ],
-        correctAnswer: 0,
+        correctAnswer: 2,
         category: "Limitation",
-        qrhImage: "qrh_images/qrh_page_29.jpg"
+        qrhImage: "QRH images/AW139-QRH_page (201).jpg"
     },
     {
         question: "What should a pilot do if the main rotor underspeed warning occurs?",
