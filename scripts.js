@@ -105,7 +105,7 @@ const questions = [
         question: "What is the procedure for landing gear failure to lock down?",
         choices: [
             "Use manual landing gear extension procedure",
-            "Reduce airspeed, display hydraulic synoptic page and apply QRH procedure",
+            "Reduce airspeed below 120 kts, display hydraulic synoptic page and apply QRH procedure",
             "Enter autorotation",
             "Perform an high speed gear-up landing"
         ],
