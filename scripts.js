@@ -51,19 +51,19 @@ const questions = [
         ],
         correctAnswer: 0,
         category: "Emergency",
-        qrhImage: "QRH images/qrh_page_30A.jpg"
+        qrhImage: "QRH images/AW139-QRH_page (39).jpg"
     },
     {
-        question: "What action should be taken in case of a single engine failure in hover?",
+        question: "What action should be taken in case of a single engine failure in hover with PI over 85% and height 80ft with a calculated dropdown of 60ft?",
         choices: [
             "Perform a flyaway procedure",
             "Descend vertically to the ground",
-            "Shut down the remaining engine",
-            "Reduce airspeed and hover in place"
+            "Hold NR above 80% and continue flight",
+            "Record time of event and file a safety report"
         ],
         correctAnswer: 0,
         category: "Emergency",
-        qrhImage: "qrh_images/qrh_page_18.jpg"
+        qrhImage: "QRH images/AW139-QRH_page (20).jpg"
     },
     {
         question: "What is the procedure when a fire is detected in the cockpit during flight?",
