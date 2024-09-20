@@ -140,14 +140,14 @@ const questions = [
     {
         question: "What is the procedure if the main battery overheats?",
         choices: [
-            "Shut down the main battery and continue flight",
             "Increase power to cool the battery",
-            "Turn on auxiliary power",
+            "switch heater ON",
             "Descend rapidly to cool the system"
+            "Shut down the main battery and continue flight",
         ],
-        correctAnswer: 0,
+        correctAnswer: 3,
         category: "Malfunction",
-        qrhImage: "qrh_images/qrh_page_14.jpg"
+        qrhImage: "QRH images/AW139-QRH_page (16).jpg"
     },
     {
         question: "What action should be taken if there is a tail rotor control binding?",
