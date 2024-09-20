@@ -78,9 +78,9 @@ const questions = [
         qrhImage: "qrh_images/AW139-QRH_page (32).jpg"
     },
     {
-        question: "What should the pilot do when the tail rotor drive fails?",
+        question: "What should the pilot do when the tail rotor drive fails in cruise flight?",
         choices: [
-            "Enter autorotation and land as soon as possible",
+            "Enter autorotation and switch engines off when autorotation stable",
             "Continue the flight and monitor yaw control",
             "Increase airspeed to regain tail rotor function",
             "Reduce airspeed and attempt to hover"
