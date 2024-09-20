@@ -141,7 +141,7 @@ const questions = [
         question: "What is the procedure if the main battery overheats?",
         choices: [
             "Increase power to cool the battery",
-            "switch heater ON",
+            "switch heater OFF",
             "Descend rapidly to cool the system",
             "Switch off the main battery and continue flight"
         ],
