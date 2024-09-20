@@ -75,7 +75,7 @@ const questions = [
         ],
         correctAnswer: 0,
         category: "Emergency",
-        qrhImage: "qrh_images/AW139-QRH_page (32).jpg"
+        qrhImage: "QRH images/AW139-QRH_page (32).jpg"
     },
     {
         question: "What should the pilot do when the tail rotor drive fails in cruise flight?",
@@ -87,7 +87,7 @@ const questions = [
         ],
         correctAnswer: 0,
         category: "Emergency",
-        qrhImage: "qrh_images/AW139-QRH_page (41).jpg"
+        qrhImage: "QRH images/AW139-QRH_page (41).jpg"
     },
     {
         question: "What action should be taken if a hydraulic pressure 1 low occurs in flight?",
@@ -99,7 +99,7 @@ const questions = [
         ],
         correctAnswer: 0,
         category: "Malfunction",
-        qrhImage: "qrh_images//AW139-QRH_page (99).jpg"
+        qrhImage: "QRH images/AW139-QRH_page (99).jpg"
     },
     {
         question: "What is the procedure for landing gear failure to lock down?",
@@ -111,19 +111,19 @@ const questions = [
         ],
         correctAnswer: 1,
         category: "Malfunction",
-        qrhImage: "qrh_images//AW139-QRH_page (35).jpg"
+        qrhImage: "QRH images/AW139-QRH_page (35).jpg"
     },
     {
         question: "What should be done if the rotor overspeed warning activates?",
         choices: [
             "Reduce collective pitch to lower rotor RPM",
-            "Increase airspeed to stabilize RPM",
+            "Raise collective to stabilize RPM",
             "Shut down engines to prevent damage",
             "Continue flight and monitor rotor speed"
         ],
-        correctAnswer: 0,
+        correctAnswer: 1,
         category: "Malfunction",
-        qrhImage: "qrh_images/qrh_page_29.jpg"
+        qrhImage: "QRH images/AW139-QRH_page (37).jpg"
     },
     {
         question: "What is the maximum recommended speed for autorotation?",
