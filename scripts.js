@@ -165,25 +165,25 @@ const questions = [
         question: "What is the maximum MGB oil temperature?",
         choices: [
             "115°C",
-            "109°C",
+            "110°C",
             "105°C",
-            "119°C"
+            "120°C"
         ],
         correctAnswer: 1,
-        category: "Limitation",
+        category: "Emergency",
         qrhImage: "QRH images/AW139-QRH_page (39).jpg"
     },
     {
-        question: "What is the maximum operating altitude for the AW139?",
+        question: "What is the maximum operating altitude for the AW139 above 6400kg?",
         choices: [
-            "20,000 ft",
-            "15,000 ft",
-            "10,000 ft",
-            "25,000 ft"
+            "20,000 ft Hp or Hd",
+            "15,000 ft Hd",
+            "8,000 ft Hp or 11,000 ft Hd",
+            "15,000 ft Hp or 25 000 ft Hd"
         ],
-        correctAnswer: 1,
+        correctAnswer: 2,
         category: "Limitation",
-        qrhImage: "qrh_images/qrh_page_45.jpg"
+        qrhImage: "QRH images/AW139-QRH_page (213).jpg"
     },
     {
         question: "What should be done when encountering electrical smoke in flight?",
