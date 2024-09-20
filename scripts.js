@@ -162,16 +162,16 @@ const questions = [
         qrhImage: "QRH images/AW139-QRH_page (43).jpg"
     },
     {
-        question: "What is the maximum continuous power transmission oil temperature?",
+        question: "What is the maximum MGB oil temperature?",
         choices: [
             "115°C",
-            "120°C",
+            "109°C",
             "105°C",
-            "110°C"
+            "119°C"
         ],
-        correctAnswer: 0,
+        correctAnswer: 1,
         category: "Limitation",
-        qrhImage: "qrh_images/qrh_page_30A.jpg"
+        qrhImage: "QRH images/AW139-QRH_page (39).jpg"
     },
     {
         question: "What is the maximum operating altitude for the AW139?",
