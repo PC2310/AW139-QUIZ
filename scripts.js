@@ -143,7 +143,7 @@ const questions = [
             "Increase power to cool the battery",
             "switch heater ON",
             "Descend rapidly to cool the system"
-            "Shut down the main battery and continue flight",
+            "Shut down the main battery",
         ],
         correctAnswer: 3,
         category: "Malfunction",
