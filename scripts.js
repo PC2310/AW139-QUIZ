@@ -109,9 +109,9 @@ const questions = [
             "Enter autorotation",
             "Perform an high speed gear-up landing"
         ],
-        correctAnswer: 0,
+        correctAnswer: 1,
         category: "Malfunction",
-        qrhImage: "qrh_images/AW139-QRH_page (35).jpg"
+        qrhImage: "qrh_images//AW139-QRH_page (35).jpg"
     },
     {
         question: "What should be done if the rotor overspeed warning activates?",
