@@ -105,13 +105,13 @@ const questions = [
         question: "What is the procedure for landing gear failure to lock down?",
         choices: [
             "Use manual landing gear extension procedure",
-            "Continue flying and attempt a restart",
-            "Land immediately without gear",
-            "Perform a gear-up landing"
+            "Reduce airspeed, display hydraulic synoptic page and apply QRH procedure",
+            "Enter autorotation",
+            "Perform an high speed gear-up landing"
         ],
         correctAnswer: 0,
         category: "Malfunction",
-        qrhImage: "qrh_images/qrh_page_27.jpg"
+        qrhImage: "qrh_images/AW139-QRH_page (35).jpg"
     },
     {
         question: "What should be done if the rotor overspeed warning activates?",
