@@ -188,14 +188,14 @@ const questions = [
     {
         question: "What should be done when encountering electrical smoke in flight?",
         choices: [
-            "Shut down affected electrical systems and land",
-            "Continue flight and monitor the situation",
+            "Try to shut down affected electrical systems and land",
+            "Continue flight using stass bottle and monitor the situation",
             "Open windows to vent smoke",
             "Increase power to clear the smoke"
         ],
         correctAnswer: 0,
         category: "Emergency",
-        qrhImage: "qrh_images/qrh_page_24.jpg"
+        qrhImage: "QRH images/AW139-QRH_page (32).jpg"
     },
     {
         question: "What is the maximum continuous rotor RPM in flight?",
