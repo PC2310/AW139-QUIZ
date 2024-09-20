@@ -153,13 +153,13 @@ const questions = [
         question: "What action should be taken if there is a tail rotor control binding?",
         choices: [
             "Reduce airspeed and prepare for landing",
-            "Increase airspeed to regain control",
-            "Attempt to reset the control systems",
-            "Shut down engines and land immediately"
+            "Increase airspeed and perform instrument approach",
+            "Assess Power setting using Collective and apply QRH procedure accordingly",
+            "Shut down engines and enter Autorotation"
         ],
-        correctAnswer: 0,
+        correctAnswer: 2,
         category: "Malfunction",
-        qrhImage: "qrh_images/qrh_page_30E.jpg"
+        qrhImage: "QRH images/AW139-QRH_page (43).jpg"
     },
     {
         question: "What is the maximum continuous power transmission oil temperature?",
