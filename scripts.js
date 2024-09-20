@@ -75,7 +75,7 @@ const questions = [
         ],
         correctAnswer: 0,
         category: "Emergency",
-        qrhImage: "qrh_images/qrh_page_24.jpg"
+        qrhImage: "qrh_images/AW139-QRH_page (32).jpg"
     },
     {
         question: "What should the pilot do when the tail rotor drive fails?",
