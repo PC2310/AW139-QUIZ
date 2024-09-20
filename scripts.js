@@ -87,7 +87,7 @@ const questions = [
         ],
         correctAnswer: 0,
         category: "Emergency",
-        qrhImage: "qrh_images/qrh_page_30C.jpg"
+        qrhImage: "qrh_images/AW139-QRH_page (41).jpg"
     },
     {
         question: "What action should be taken if a hydraulic system failure occurs in flight?",
