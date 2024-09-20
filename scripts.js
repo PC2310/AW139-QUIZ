@@ -90,16 +90,16 @@ const questions = [
         qrhImage: "qrh_images/AW139-QRH_page (41).jpg"
     },
     {
-        question: "What action should be taken if a hydraulic system failure occurs in flight?",
+        question: "What action should be taken if a hydraulic pressure 1 low occurs in flight?",
         choices: [
-            "Land as soon as practicable",
+            "Lower landing gear and Land as soon as practicable",
             "Increase collective to compensate",
             "Reduce airspeed and fly manually",
             "Shut down all other systems"
         ],
         correctAnswer: 0,
         category: "Malfunction",
-        qrhImage: "qrh_images/qrh_page_14.jpg"
+        qrhImage: "qrh_images//AW139-QRH_page (99).jpg"
     },
     {
         question: "What is the procedure for landing gear failure to lock down?",
