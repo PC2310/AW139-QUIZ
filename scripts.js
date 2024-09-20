@@ -135,7 +135,7 @@ const questions = [
         ],
         correctAnswer: 0,
         category: "Limitation",
-        qrhImage: "qrh_images/qrh_page_17.jpg"
+        qrhImage: "QRH images/AW139-QRH_page (19).jpg"
     },
     {
         question: "What is the procedure if the main battery overheats?",
