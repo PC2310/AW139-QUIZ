@@ -225,25 +225,25 @@ const questions = [
         question: "What is the procedure for engine oil pressure low warning?",
         choices: [
             "Reduce power and land as soon as possible",
-            "Shut down the engine immediately",
+            "If confirmed, Shut down the engine and land as soon as practicable",
             "Increase power to regain pressure",
             "Continue flight at reduced power"
         ],
-        correctAnswer: 0,
-        category: "Emergency",
-        qrhImage: "qrh_images/qrh_page_18E.jpg"
-    },
-    {
-        question: "What is the recommended airspeed for ditching procedures?",
-        choices: [
-            "40 KIAS",
-            "50 KIAS",
-            "60 KIAS",
-            "30 KIAS"
-        ],
         correctAnswer: 1,
         category: "Emergency",
-        qrhImage: "qrh_images/qrh_page_18B.jpg"
+        qrhImage: "QRH images/AW139-QRH_page (25).jpg"
+    },
+    {
+        question: "What is the recommended aircraft ditching configuration?",
+        choices: [
+            "40 KIAS, wind coming from right",
+            "60 KIAS, wind coming from left",
+            "30 KIAS maximum, downwind",
+            "30 KIAS maximum, into wind"
+        ],
+        correctAnswer: 3,
+        category: "Emergency",
+        qrhImage: "QRH images/AW139-QRH_page (21).jpg, QRH images/AW139-QRH_page (22).jpg, QRH images/AW139-QRH_page (23).jpg, QRH images/AW139-QRH_page (24).jpg"
     },
     {
         question: "What action should be taken in case of a baggage bay fire?",
@@ -318,14 +318,21 @@ function checkAnswer() {
         document.getElementById('result').textContent = `Incorrect! The correct answer was: ${questions[currentQuestionIndex - 1].choices[correctAnswer]}`;
     }
 
-    // Show QRH image
-    const qrhImage = questions[currentQuestionIndex - 1].qrhImage;
-    if (qrhImage) {
-        document.getElementById('result').innerHTML += `<br><img src="${qrhImage}" alt="QRH Page" style="max-width: 100%;">`;
+    // Clear previous QRH images
+    const resultElement = document.getElementById('result');
+    resultElement.innerHTML += "<br>"; // Add a line break after the result text
+
+    // Show multiple QRH images if applicable
+    const qrhImages = questions[currentQuestionIndex - 1].qrhImages;
+    if (qrhImages && qrhImages.length > 0) {
+        qrhImages.forEach(image => {
+            resultElement.innerHTML += `<img src="${image}" alt="QRH Page" style="max-width: 100%; margin-top: 10px;"><br>`;
+        });
     }
 
     document.getElementById('next-button').style.display = "block";
 }
+
 
 window.onload = function() {
     // Shuffle the questions before starting the quiz
