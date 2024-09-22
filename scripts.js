@@ -212,14 +212,14 @@ const questions = [
     {
         question: "What should a pilot do if the main rotor underspeed warning occurs?",
         choices: [
-            "Increase collective to restore RPM",
+            "Raise collective to restore NR",
             "Reduce airspeed and increase power",
             "Continue flying at a reduced power setting",
-            "Land immediately and shut down"
+            "Lower collective to recover NR"
         ],
         correctAnswer: 1,
         category: "Emergency",
-        qrhImage: "qrh_images/qrh_page_29.jpg"
+        qrhImage: "QRH images/AW139-QRH_page (37).jpg"
     },
     {
         question: "What is the procedure for engine oil pressure low warning?",
