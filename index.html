@@ -3,20 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AW139 Emergency Of The Day</title>
+    <title>Aviation Quiz</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <h1>AW139 Emergency Of The Day</h1>
-        <div id="quiz-container">
+        <h1>Select a Question Category</h1>
+        <div id="menu">
+            <button onclick="startQuiz('Emergency')">Emergency</button>
+            <button onclick="startQuiz('Malfunction')">Malfunction</button>
+            <button onclick="startQuiz('Limitation')">Limitation</button>
+        </div>
+        
+        <div id="quiz-container" style="display:none;">
+            <h1 id="category-title"></h1>
             <p id="question"></p>
-            <div id="choices"></div> <!-- Container for answer choices -->
+            <div id="choices"></div>
             <button onclick="checkAnswer()">Submit</button>
             <p id="result"></p>
-        </div>
-        <div id="next-button" style="display:none;">
-            <button onclick="loadNextQuestion()">Next Question</button>
+            <div id="next-button" style="display:none;">
+                <button onclick="loadNextQuestion()">Next Question</button>
+            </div>
         </div>
     </div>
     <script src="scripts.js"></script>
