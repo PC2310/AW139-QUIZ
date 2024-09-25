@@ -253,7 +253,7 @@ const questions = [
     {
         question: "What action should be taken in case of a baggage bay fire?",
         choices: [
-            "Land immediately and extinguish the fire",
+            "Land immediately, Shut down engines in emergency, Evacuate",
             "Open the baggage bay and ventilate",
             "Shut down engines and land immediately",
             "Continue flight and monitor the fire"
