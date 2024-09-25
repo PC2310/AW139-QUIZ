@@ -255,12 +255,12 @@ const questions = [
         choices: [
             "Land immediately, Shut down engines in emergency, Evacuate",
             "Open the baggage bay and ventilate",
-            "Shut down engines and land immediately",
-            "Continue flight and monitor the fire"
+            "Shut down engines and enter autorotation",
+            "Continue flight, land as soon as practicable"
         ],
         correctAnswer: 0,
         category: "Emergency",
-        qrhImages: ["qrh_images/qrh_page_23.jpg"]
+        qrhImages: ["QRH images/AW139-QRH_page (31).jpg"]
     },
     {
         question: "What should be done if the EEC (Engine Electronic Control) fails?",
