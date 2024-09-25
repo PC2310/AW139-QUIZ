@@ -255,7 +255,7 @@ const questions = [
         ],
         correctAnswer: 0,
         category: "Emergency",
-        qrhImage: "qrh_images/qrh_page_23.jpg"
+        qrhImage: ["qrh_images/qrh_page_23.jpg"]
     },
     {
         question: "What should be done if the EEC (Engine Electronic Control) fails?",
@@ -267,7 +267,7 @@ const questions = [
         ],
         correctAnswer: 0,
         category: "Malfunction",
-        qrhImage: "qrh_images/qrh_page_18E.jpg"
+        qrhImage: ["qrh_images/qrh_page_18E.jpg"]
     }
 ];
 
