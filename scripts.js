@@ -265,14 +265,14 @@ const questions = [
     {
         question: "What should be done if the EEC (Engine Electronic Control) fails?",
         choices: [
-            "Switch to manual engine control",
+            "Continue flight on remaining engines",
             "Shut down the engine",
             "Restart the engine",
-            "Continue flight on remaining engines"
+            "Switch to manual engine control"
         ],
-        correctAnswer: 0,
+        correctAnswer: 3,
         category: "Malfunction",
-        qrhImages: ["qrh_images/qrh_page_18E.jpg"]
+        qrhImages: ["QRH images/AW139-QRH_page (25).jpg"]
     }
 ];
 
