@@ -15,7 +15,7 @@ const questions = [
         ],
         correctAnswer: 0,
         category: "Emergency",
-        qrhImage: ["QRH images/AW139-QRH_page (17).jpg"] // Path to the QRH page image
+        qrhImages: ["QRH images/AW139-QRH_page (17).jpg"] // Path to the QRH page image
     },
     {
         question: "What should the pilot do if the main rotor RPM low warning light illuminates?",
@@ -27,7 +27,7 @@ const questions = [
         ],
         correctAnswer: 2,
         category: "Malfunction",
-        qrhImage: ["QRH images/AW139-QRH_page (37).jpg"]
+        qrhImages: ["QRH images/AW139-QRH_page (37).jpg"]
     },
     {
         question: "What is the maximum allowable gross weight for the AW139?",
@@ -39,7 +39,7 @@ const questions = [
         ],
         correctAnswer: 0,
         category: "Limitation",
-        qrhImage: ["RFM-Images/RFM-S90-1.jpg"]
+        qrhImages: ["RFM-Images/RFM-S90-1.jpg"]
     },
     {
         question: "What is the correct response when a main gearbox oil temperature high warning occurs?",
@@ -51,7 +51,7 @@ const questions = [
         ],
         correctAnswer: 0,
         category: "Emergency",
-        qrhImage: ["QRH images/AW139-QRH_page (39).jpg"]
+        qrhImages: ["QRH images/AW139-QRH_page (39).jpg"]
     },
     {
         question: "What action should be taken in case of a single engine failure in hover with PI over 85% and height 80ft with a calculated dropdown of 60ft?",
@@ -63,7 +63,7 @@ const questions = [
         ],
         correctAnswer: 0,
         category: "Emergency",
-        qrhImage: ["QRH images/AW139-QRH_page (20).jpg"]
+        qrhImages: ["QRH images/AW139-QRH_page (20).jpg"]
     },
     {
         question: "What is the procedure when a fire is detected in the cockpit during flight?",
@@ -75,7 +75,7 @@ const questions = [
         ],
         correctAnswer: 0,
         category: "Emergency",
-        qrhImage: ["QRH images/AW139-QRH_page (32).jpg"]
+        qrhImages: ["QRH images/AW139-QRH_page (32).jpg"]
     },
     {
         question: "What should the pilot do when the tail rotor drive fails in cruise flight?",
@@ -87,7 +87,7 @@ const questions = [
         ],
         correctAnswer: 0,
         category: "Emergency",
-        qrhImage: ["QRH images/AW139-QRH_page (41).jpg"]
+        qrhImages: ["QRH images/AW139-QRH_page (41).jpg"]
     },
     {
         question: "What action should be taken if a hydraulic pressure 1 low occurs in flight?",
@@ -99,7 +99,7 @@ const questions = [
         ],
         correctAnswer: 0,
         category: "Malfunction",
-        qrhImage: ["QRH images/AW139-QRH_page (99).jpg"]
+        qrhImages: ["QRH images/AW139-QRH_page (99).jpg"]
     },
     {
         question: "What is the procedure for landing gear failure to lock down?",
@@ -111,7 +111,7 @@ const questions = [
         ],
         correctAnswer: 1,
         category: "Malfunction",
-        qrhImage: ["QRH images/AW139-QRH_page (35).jpg"]
+        qrhImages: ["QRH images/AW139-QRH_page (35).jpg"]
     },
     {
         question: "What should be done if the rotor overspeed warning activates?",
@@ -123,7 +123,7 @@ const questions = [
         ],
         correctAnswer: 1,
         category: "Malfunction",
-        qrhImage: ["QRH images/AW139-QRH_page (37).jpg"]
+        qrhImages: ["QRH images/AW139-QRH_page (37).jpg"]
     },
     {
         question: "What is the maximum recommended speed for autorotation?",
@@ -135,7 +135,7 @@ const questions = [
         ],
         correctAnswer: 0,
         category: "Limitation",
-        qrhImage: ["QRH images/AW139-QRH_page (19).jpg"]
+        qrhImages: ["QRH images/AW139-QRH_page (19).jpg"]
     },
     {
         question: "What is the procedure if the main battery overheats?",
@@ -147,7 +147,7 @@ const questions = [
         ],
         correctAnswer: 3,
         category: "Malfunction",
-        qrhImage: ["QRH images/AW139-QRH_page (16).jpg"]
+        qrhImages: ["QRH images/AW139-QRH_page (16).jpg"]
     },
     {
         question: "What action should be taken if there is a tail rotor control binding?",
@@ -159,7 +159,7 @@ const questions = [
         ],
         correctAnswer: 2,
         category: "Malfunction",
-        qrhImage: ["QRH images/AW139-QRH_page (43).jpg"]
+        qrhImages: ["QRH images/AW139-QRH_page (43).jpg"]
     },
     {
         question: "What is the maximum MGB oil temperature?",
@@ -171,7 +171,7 @@ const questions = [
         ],
         correctAnswer: 1,
         category: "Emergency",
-        qrhImage: ["QRH images/AW139-QRH_page (39).jpg"]
+        qrhImages: ["QRH images/AW139-QRH_page (39).jpg"]
     },
     {
         question: "What is the maximum operating altitude for the AW139 above 6400kg?",
@@ -183,7 +183,7 @@ const questions = [
         ],
         correctAnswer: 2,
         category: "Limitation",
-        qrhImage: ["QRH images/AW139-QRH_page (213).jpg"]
+        qrhImages: ["QRH images/AW139-QRH_page (213).jpg"]
     },
     {
         question: "What should be done when encountering electrical smoke in flight?",
@@ -195,7 +195,7 @@ const questions = [
         ],
         correctAnswer: 0,
         category: "Emergency",
-        qrhImage: ["QRH images/AW139-QRH_page (32).jpg"]
+        qrhImages: ["QRH images/AW139-QRH_page (32).jpg"]
     },
     {
         question: "What is the maximum continuous rotor RPM in flight AEO?",
@@ -207,7 +207,7 @@ const questions = [
         ],
         correctAnswer: 2,
         category: "Limitation",
-        qrhImage: ["QRH images/AW139-QRH_page (201).jpg"]
+        qrhImages: ["QRH images/AW139-QRH_page (201).jpg"]
     },
     {
         question: "What should a pilot do if the main rotor underspeed warning occurs?",
@@ -219,7 +219,7 @@ const questions = [
         ],
         correctAnswer: 1,
         category: "Emergency",
-        qrhImage: ["QRH images/AW139-QRH_page (37).jpg"]
+        qrhImages: ["QRH images/AW139-QRH_page (37).jpg"]
     },
     {
         question: "What is the procedure for engine oil pressure low warning?",
@@ -231,7 +231,7 @@ const questions = [
         ],
         correctAnswer: 1,
         category: "Emergency",
-        qrhImage: ["QRH images/AW139-QRH_page (25).jpg"]
+        qrhImages: ["QRH images/AW139-QRH_page (25).jpg"]
     },
     {
         question: "What is the recommended aircraft ditching configuration?",
@@ -243,7 +243,7 @@ const questions = [
         ],
         correctAnswer: 3,
         category: "Emergency",
-        qrhImage: ["QRH images/AW139-QRH_page (21).jpg, QRH images/AW139-QRH_page (22).jpg, QRH images/AW139-QRH_page (23).jpg, QRH images/AW139-QRH_page (24).jpg"]
+        qrhImages: ["QRH images/AW139-QRH_page (21).jpg, QRH images/AW139-QRH_page (22).jpg, QRH images/AW139-QRH_page (23).jpg, QRH images/AW139-QRH_page (24).jpg"]
     },
     {
         question: "What action should be taken in case of a baggage bay fire?",
@@ -255,7 +255,7 @@ const questions = [
         ],
         correctAnswer: 0,
         category: "Emergency",
-        qrhImage: ["qrh_images/qrh_page_23.jpg"]
+        qrhImages: ["qrh_images/qrh_page_23.jpg"]
     },
     {
         question: "What should be done if the EEC (Engine Electronic Control) fails?",
@@ -267,7 +267,7 @@ const questions = [
         ],
         correctAnswer: 0,
         category: "Malfunction",
-        qrhImage: ["qrh_images/qrh_page_18E.jpg"]
+        qrhImages: ["qrh_images/qrh_page_18E.jpg"]
     }
 ];
 
