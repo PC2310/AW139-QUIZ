@@ -362,17 +362,17 @@ function checkAnswer() {
     const resultElement = document.getElementById('result');
     resultElement.innerHTML += "<br>";
 
-    // Handle QRH PDFs or images
-    const qrhFiles = filteredQuestions[currentQuestionIndex - 1].qrhFiles || [];
-    if (qrhFiles.length > 0) {
-        qrhFiles.forEach(file => {
-            resultElement.innerHTML += `<embed src="${file}" type="application/pdf" width="100%" height="600px"><br>`;
+    // Safely handle qrhImages by providing a fallback to an empty array if undefined
+    const qrhImages = questions[currentQuestionIndex - 1].qrhImages || [];
+    console.log("QRH Images:", qrhImages);
+
+    // Show multiple QRH images if applicable
+    if (qrhImages.length > 0) {
+        qrhImages.forEach(image => {
+            console.log("Displaying image:", image);
+            resultElement.innerHTML += `<img src="${image}" alt="QRH Page" style="max-width: 100%; margin-top: 10px;"><br>`;
         });
     }
 
     document.getElementById('next-button').style.display = "block";
 }
-
-window.onload = function() {
-    // No need to shuffle all questions now, as we shuffle based on category when the quiz starts.
-};
