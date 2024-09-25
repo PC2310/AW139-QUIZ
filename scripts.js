@@ -1,8 +1,28 @@
-function shuffleArray(array) {
-    for (let i = array.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [array[i], array[j]] = [array[j], array[i]];
-    }
+let allQuestions = [...questions]; // Store all questions
+let filteredQuestions = []; // Store filtered questions based on category
+let currentQuestionIndex = 0;
+let selectedCategory = '';
+
+function startQuiz(category) {
+    // Set the selected category
+    selectedCategory = category;
+
+    // Filter questions by category
+    filteredQuestions = allQuestions.filter(question => question.category === selectedCategory);
+    
+    // Shuffle the filtered questions
+    shuffleArray(filteredQuestions);
+    
+    // Display the quiz container and hide the menu
+    document.getElementById('menu').style.display = 'none';
+    document.getElementById('quiz-container').style.display = 'block';
+    
+    // Set the category title
+    document.getElementById('category-title').textContent = category + " Questions";
+
+    // Reset the question index and load the first question
+    currentQuestionIndex = 0;
+    loadNextQuestion();
 }
 const questions = [
     {
@@ -294,8 +314,8 @@ const questions = [
 let currentQuestionIndex = 0;
 
 function loadNextQuestion() {
-    if (currentQuestionIndex < questions.length) {
-        const questionData = questions[currentQuestionIndex];
+    if (currentQuestionIndex < filteredQuestions.length) {
+        const questionData = filteredQuestions[currentQuestionIndex];
         document.getElementById('question').textContent = questionData.question;
 
         // Clear previous choices
@@ -330,27 +350,23 @@ function checkAnswer() {
     }
 
     const userAnswer = parseInt(selectedChoice.value);
-    const correctAnswer = questions[currentQuestionIndex - 1].correctAnswer;
+    const correctAnswer = filteredQuestions[currentQuestionIndex - 1].correctAnswer;
 
     if (userAnswer === correctAnswer) {
         document.getElementById('result').textContent = "Correct!";
     } else {
-        document.getElementById('result').textContent = `Incorrect! The correct answer was: ${questions[currentQuestionIndex - 1].choices[correctAnswer]}`;
+        document.getElementById('result').textContent = `Incorrect! The correct answer was: ${filteredQuestions[currentQuestionIndex - 1].choices[correctAnswer]}`;
     }
 
     // Clear previous QRH images
     const resultElement = document.getElementById('result');
-    resultElement.innerHTML += "<br>"; // Add a line break after the result text
+    resultElement.innerHTML += "<br>";
 
-    // Safely handle qrhImages by providing a fallback to an empty array if undefined
-    const qrhImages = questions[currentQuestionIndex - 1].qrhImages || [];
-    console.log("QRH Images:", qrhImages);
-
-    // Show multiple QRH images if applicable
-    if (qrhImages.length > 0) {
-        qrhImages.forEach(image => {
-            console.log("Displaying image:", image);
-            resultElement.innerHTML += `<img src="${image}" alt="QRH Page" style="max-width: 100%; margin-top: 10px;"><br>`;
+    // Handle QRH PDFs or images
+    const qrhFiles = filteredQuestions[currentQuestionIndex - 1].qrhFiles || [];
+    if (qrhFiles.length > 0) {
+        qrhFiles.forEach(file => {
+            resultElement.innerHTML += `<embed src="${file}" type="application/pdf" width="100%" height="600px"><br>`;
         });
     }
 
@@ -358,8 +374,5 @@ function checkAnswer() {
 }
 
 window.onload = function() {
-    // Shuffle the questions before starting the quiz
-    shuffleArray(questions);
-    loadNextQuestion();
+    // No need to shuffle all questions now, as we shuffle based on category when the quiz starts.
 };
-
