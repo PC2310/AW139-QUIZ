@@ -337,10 +337,6 @@ function checkAnswer() {
     document.getElementById('next-button').style.display = "block";
 }
 
-
-    document.getElementById('next-button').style.display = "block";
-}
-
 window.onload = function() {
     // Shuffle the questions before starting the quiz
     shuffleArray(questions);
