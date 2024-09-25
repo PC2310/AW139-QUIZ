@@ -4,13 +4,11 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     text-align: center;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh; /* Full viewport height */
+    overflow-x: hidden;
 }
 
 .container {
