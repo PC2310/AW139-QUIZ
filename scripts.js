@@ -322,14 +322,14 @@ function checkAnswer() {
     const resultElement = document.getElementById('result');
     resultElement.innerHTML += "<br>"; // Add a line break after the result text
 
-    // Log qrhImages to debug
-    const qrhImages = questions[currentQuestionIndex - 1].qrhImages;
+    // Safely handle qrhImages by providing a fallback to an empty array if undefined
+    const qrhImages = questions[currentQuestionIndex - 1].qrhImages || [];
     console.log("QRH Images:", qrhImages);
 
     // Show multiple QRH images if applicable
-    if (qrhImages && qrhImages.length > 0) {
+    if (qrhImages.length > 0) {
         qrhImages.forEach(image => {
-            console.log("Displaying image:", image); // Log each image being displayed
+            console.log("Displaying image:", image);
             resultElement.innerHTML += `<img src="${image}" alt="QRH Page" style="max-width: 100%; margin-top: 10px;"><br>`;
         });
     }
