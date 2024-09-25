@@ -243,7 +243,12 @@ const questions = [
         ],
         correctAnswer: 3,
         category: "Emergency",
-        qrhImages: ["QRH images/AW139-QRH_page (21).jpg, QRH images/AW139-QRH_page (22).jpg, QRH images/AW139-QRH_page (23).jpg, QRH images/AW139-QRH_page (24).jpg"]
+        qrhImages: [
+             "QRH images/AW139-QRH_page (21).jpg, 
+              QRH images/AW139-QRH_page (22).jpg, 
+              QRH images/AW139-QRH_page (23).jpg, 
+              QRH images/AW139-QRH_page (24).jpg"
+        ]
     },
     {
         question: "What action should be taken in case of a baggage bay fire?",
