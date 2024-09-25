@@ -324,7 +324,7 @@ function checkAnswer() {
 
     // Log qrhImages to debug
     const qrhImages = questions[currentQuestionIndex - 1].qrhImages;
-    console.log("QRH Images:", qrhImages);
+    console.log("QRH images:", qrhImages);
 
     // Show multiple QRH images if applicable
     if (qrhImages && qrhImages.length > 0) {
