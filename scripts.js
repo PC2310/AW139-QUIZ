@@ -273,6 +273,21 @@ const questions = [
         correctAnswer: 3,
         category: "Malfunction",
         qrhImages: ["QRH images/AW139-QRH_page (25).jpg"]
+    },
+    {
+        question: "How are powered the 2 Hoists?",
+        choices: [
+            "MAIN and SEC by MAIN BUS 1",
+            "MAIN and SEC by MAIN BUS 2",
+            "MAIN by MAIN BUS 1 and SEC by MAIN BUS 2",
+            "MAIN by MAIN BUS 2 and SEC by MAIN BUS 1"
+        ],
+        correctAnswer: 2,
+        category: "Malfunction",
+        qrhImages: [
+            "RFM-Images/RFM-S41-33.jpg", 
+            "RFM-Images/RFM-S41-34.jpg"
+        ]
     }
 ];
 
