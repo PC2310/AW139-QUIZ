@@ -1,29 +1,4 @@
-let allQuestions = [...questions]; // Store all questions
-let filteredQuestions = []; // Store filtered questions based on category
-let currentQuestionIndex = 0;
-let selectedCategory = '';
 
-function startQuiz(category) {
-    // Set the selected category
-    selectedCategory = category;
-
-    // Filter questions by category
-    filteredQuestions = allQuestions.filter(question => question.category === selectedCategory);
-    
-    // Shuffle the filtered questions
-    shuffleArray(filteredQuestions);
-    
-    // Display the quiz container and hide the menu
-    document.getElementById('menu').style.display = 'none';
-    document.getElementById('quiz-container').style.display = 'block';
-    
-    // Set the category title
-    document.getElementById('category-title').textContent = category + " Questions";
-
-    // Reset the question index and load the first question
-    currentQuestionIndex = 0;
-    loadNextQuestion();
-}
 const questions = [
     {
         question: "What is the procedure for a double engine failure during flight?",
@@ -310,6 +285,33 @@ const questions = [
         ]
     }
 ];
+
+let allQuestions = [...questions]; // Store all questions
+let filteredQuestions = []; // Store filtered questions based on category
+let currentQuestionIndex = 0;
+let selectedCategory = '';
+
+function startQuiz(category) {
+    // Set the selected category
+    selectedCategory = category;
+
+    // Filter questions by category
+    filteredQuestions = allQuestions.filter(question => question.category === selectedCategory);
+    
+    // Shuffle the filtered questions
+    shuffleArray(filteredQuestions);
+    
+    // Display the quiz container and hide the menu
+    document.getElementById('menu').style.display = 'none';
+    document.getElementById('quiz-container').style.display = 'block';
+    
+    // Set the category title
+    document.getElementById('category-title').textContent = category + " Questions";
+
+    // Reset the question index and load the first question
+    currentQuestionIndex = 0;
+    loadNextQuestion();
+}
 
 function loadNextQuestion() {
     if (currentQuestionIndex < filteredQuestions.length) {
