@@ -307,10 +307,13 @@ function startQuiz(category) {
     // Shuffle the filtered questions
     shuffleArray(filteredQuestions);
     
-    // Display the quiz container and hide the menu and title
+    // Hide the menu and the title, then show the quiz container
     document.getElementById('menu').style.display = 'none';
     document.getElementById('quiz-container').style.display = 'block';
     document.getElementById('category-title-heading').style.display = 'none'; // Hide the "Select a Question Category" title
+
+    // Show the "Return Home" button
+    document.getElementById('return-home').style.display = 'block';
 
     // Set the category title for the quiz
     document.getElementById('category-title').textContent = category + " Questions";
@@ -376,6 +379,18 @@ function loadNextQuestion() {
         document.getElementById('choices').style.display = "none";
         document.getElementById('next-button').style.display = "none";
     }
+}
+
+function returnHome() {
+    // Hide the quiz container
+    document.getElementById('quiz-container').style.display = 'none';
+    
+    // Show the menu and the title
+    document.getElementById('menu').style.display = 'block';
+    document.getElementById('category-title-heading').style.display = 'block';
+
+    // Hide the "Return Home" button
+    document.getElementById('return-home').style.display = 'none';
 }
 
 function checkAnswer() {
