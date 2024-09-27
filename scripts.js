@@ -111,7 +111,7 @@ const questions = [
             "Perform an high speed gear-up landing"
         ],
         correctAnswer: 1,
-        category: "Malfunction",
+        category: "Emergency",
         qrhImages: ["QRH images/AW139-QRH_page (35).jpg"]
     },
     {
