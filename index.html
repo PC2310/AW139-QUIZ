@@ -5,10 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aviation Quiz</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        #return-home {
+            display: none; /* Hide the button initially */
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            padding: 10px 20px;
+            background-color: #f44336;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        #return-home:hover {
+            background-color: #d32f2f; /* Darker red on hover */
+        }
+    </style>
 </head>
 <body>
+    <button id="return-home" onclick="returnHome()">Return Home</button>
+
     <div class="container">
-        <!-- Add an id to the title -->
         <h1 id="category-title-heading">Select a Question Category</h1>
         <div id="menu">
             <button onclick="startQuiz('Emergency')">Emergency</button>
