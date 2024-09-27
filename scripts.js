@@ -307,11 +307,12 @@ function startQuiz(category) {
     // Shuffle the filtered questions
     shuffleArray(filteredQuestions);
     
-    // Display the quiz container and hide the menu
+    // Display the quiz container and hide the menu and title
     document.getElementById('menu').style.display = 'none';
     document.getElementById('quiz-container').style.display = 'block';
-    
-    // Set the category title
+    document.getElementById('category-title-heading').style.display = 'none'; // Hide the "Select a Question Category" title
+
+    // Set the category title for the quiz
     document.getElementById('category-title').textContent = category + " Questions";
 
     // Reset the question index and load the first question
