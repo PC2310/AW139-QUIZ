@@ -311,7 +311,34 @@ const questions = [
     }
 ];
 
-let currentQuestionIndex = 0;
+function loadNextQuestion() {
+    if (currentQuestionIndex < filteredQuestions.length) {
+        const questionData = filteredQuestions[currentQuestionIndex];
+        document.getElementById('question').textContent = questionData.question;
+
+        // Clear previous choices
+        const choicesContainer = document.getElementById('choices');
+        choicesContainer.innerHTML = '';
+
+        // Dynamically create radio buttons for the choices
+        questionData.choices.forEach((choice, index) => {
+            const choiceElement = document.createElement('div');
+            choiceElement.innerHTML = `
+                <input type="radio" name="quiz-choice" id="choice${index}" value="${index}">
+                <label for="choice${index}">${choice}</label>
+            `;
+            choicesContainer.appendChild(choiceElement);
+        });
+
+        document.getElementById('result').textContent = "";
+        document.getElementById('next-button').style.display = "none";
+        currentQuestionIndex++;
+    } else {
+        document.getElementById('question').textContent = "End of Quiz! You've completed all questions.";
+        document.getElementById('choices').style.display = "none";
+        document.getElementById('next-button').style.display = "none";
+    }
+}
 
 function loadNextQuestion() {
     if (currentQuestionIndex < filteredQuestions.length) {
@@ -360,13 +387,13 @@ function checkAnswer() {
 
     // Clear previous QRH images
     const resultElement = document.getElementById('result');
-    resultElement.innerHTML += "<br>";
+    resultElement.innerHTML += "<br>"; // Add a line break after the result text
 
-    // Safely handle qrhImages by providing a fallback to an empty array if undefined
-    const qrhImages = questions[currentQuestionIndex - 1].qrhImages || [];
+    // Safely handle qrhImages (JPGs) by providing a fallback to an empty array if undefined
+    const qrhImages = filteredQuestions[currentQuestionIndex - 1].qrhImages || [];
     console.log("QRH Images:", qrhImages);
 
-    // Show multiple QRH images if applicable
+    // Show multiple QRH JPG images if applicable
     if (qrhImages.length > 0) {
         qrhImages.forEach(image => {
             console.log("Displaying image:", image);
@@ -376,3 +403,7 @@ function checkAnswer() {
 
     document.getElementById('next-button').style.display = "block";
 }
+
+window.onload = function() {
+    // No need to shuffle all questions now, as we shuffle based on category when the quiz starts.
+};
