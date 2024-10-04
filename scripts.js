@@ -317,6 +317,7 @@ function startQuiz(category) {
     // Hide the "Return Home" button and the disclaimer
     document.getElementById('return-home').style.display = 'block';
     document.getElementById('disclaimer').style.display = 'none'; // Hide the disclaimer
+    document.getElementById('copyright').style.display = 'none';
 
     // Set the category title for the quiz
     document.getElementById('category-title').textContent = category + " Questions";
