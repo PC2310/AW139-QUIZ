@@ -407,6 +407,7 @@ function returnHome() {
 
     // Hide the "Return Home" button
     document.getElementById('return-home').style.display = 'none';
+    document.getElementById('footer').style.display = 'block';
 }
 
 function checkAnswer() {
