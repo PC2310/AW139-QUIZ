@@ -6,26 +6,20 @@
     <title>Aviation Quiz</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        #return-home {
-            display: none; /* Hide the button initially */
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            padding: 10px 20px;
-            background-color: #f44336;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            background-color: #f1f1f1;
+            padding: 10px;
             font-size: 14px;
-        }
-        #return-home:hover {
-            background-color: #d32f2f; /* Darker red on hover */
+            color: #333;
         }
     </style>
 </head>
 <body>
-    <button id="return-home" onclick="returnHome()">Return Home</button>
+    <button id="return-home" onclick="returnHome()" style="display: none;">Return Home</button>
 
     <div class="container">
         <h1 id="category-title-heading">Select a Question Category</h1>
@@ -46,6 +40,16 @@
             </div>
         </div>
     </div>
+
+    <!-- Footer for copyright notice -->
+    <footer id="copyright-footer">
+        © <span id="current-year"></span> Pierre Cudennec. All Rights Reserved.
+    </footer>
+
     <script src="scripts.js"></script>
+    <script>
+        // Set the current year dynamically
+        document.getElementById("current-year").textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
