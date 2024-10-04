@@ -289,7 +289,20 @@ const questions = [
             "RFM-Images/RFM-S41-33.jpg", 
             "RFM-Images/RFM-S41-34.jpg"
         ]
+    },
+    {
+        question: "What should be done if the nose wheel is unlocked in Flight?",
+        choices: [
+            "Cycle landing gear UP and DOWN",
+            "Press EMERG DOWN button",
+            "Cycle NOSE WHEEL switch",
+            "Select BUS TIE ON"
+        ],
+        correctAnswer: 2,
+        category: "Malfunction",
+        qrhImages: ["QRH images/AW139-QRH_page (102).jpg"]
     }
+    
 ];
 
 // Step 2: Initialize allQuestions to be a copy of the questions array
