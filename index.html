@@ -6,6 +6,25 @@
     <title>Aviation Quiz</title>
     <link rel="stylesheet" href="styles.css">
     <style>
+         #return-home {
+            display: none; /* Hide initially */
+            position: fixed; /* Make it fixed in the top-left corner */
+            top: 10px;
+            left: 10px;
+            background-color: #b71c1c; /* Dark red background */
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 14px;
+            cursor: pointer;
+            z-index: 1000; /* Ensure it stays on top */
+        }
+
+        /* Darker color on hover */
+        #return-home:hover {
+            background-color: #a31616;
+        }
         footer {
             position: fixed;
             bottom: 0;
