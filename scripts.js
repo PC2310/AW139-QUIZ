@@ -292,11 +292,6 @@ const questions = [
     }
 ];
 
-let allQuestions = [...questions]; // Store all questions
-let filteredQuestions = []; // Store filtered questions based on category
-let currentQuestionIndex = 0;
-let selectedCategory = '';
-
 function startQuiz(category) {
     // Set the selected category
     selectedCategory = category;
@@ -312,8 +307,9 @@ function startQuiz(category) {
     document.getElementById('quiz-container').style.display = 'block';
     document.getElementById('category-title-heading').style.display = 'none'; // Hide the "Select a Question Category" title
 
-    // Show the "Return Home" button
+    // Hide the "Return Home" button and the disclaimer
     document.getElementById('return-home').style.display = 'block';
+    document.getElementById('disclaimer').style.display = 'none'; // Hide the disclaimer
 
     // Set the category title for the quiz
     document.getElementById('category-title').textContent = category + " Questions";
