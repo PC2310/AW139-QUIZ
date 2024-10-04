@@ -292,6 +292,13 @@ const questions = [
     }
 ];
 
+// Step 2: Initialize allQuestions to be a copy of the questions array
+let allQuestions = [...questions];
+
+// Step 3: Now define your functions, such as startQuiz
+let filteredQuestions = [];
+let currentQuestionIndex = 0;
+
 function startQuiz(category) {
     // Set the selected category
     selectedCategory = category;
