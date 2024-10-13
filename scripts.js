@@ -305,6 +305,33 @@ const questions = [
             "RFM-Images/RFM-S41-34.jpg"
         ]
     },
+        {
+        question: "How are powered the 2 Hoists?",
+        choices: [
+            "MAIN and SEC by MAIN BUS 1",
+            "MAIN and SEC by MAIN BUS 2",
+            "MAIN by MAIN BUS 1 and SEC by MAIN BUS 2",
+            "MAIN by MAIN BUS 2 and SEC by MAIN BUS 1"
+        ],
+        correctAnswer: 2,
+        category: "Malfunction",
+        qrhImages: [
+            "RFM-Images/RFM-S41-33.jpg", 
+            "RFM-Images/RFM-S41-34.jpg"
+        ]
+    },
+      {
+        question: "What is the time required to raise the maximum load from fully extended?",
+        choices: [
+            "1 min",
+            "2.5 min",
+            "2 min",
+            "1.5 min"
+        ],
+        correctAnswer: 2,
+        category: "Malfunction",
+        qrhImages: ["RFM-Images/RFM-S41-29.jpg"]
+    },
     {
         question: "What should be done if the nose wheel is unlocked in Flight?",
         choices: [
@@ -317,7 +344,6 @@ const questions = [
         category: "Malfunction",
         qrhImages: ["QRH images/AW139-QRH_page (102).jpg"]
     }
-    
 ];
 
 // Step 2: Initialize allQuestions to be a copy of the questions array
