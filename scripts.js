@@ -41,8 +41,8 @@ const questions = [
         correctAnswer: 1,
         category: "Malfunction",
         qrhImages: [
-            "RFM-Images/RFM-S41-33.jpg", 
-            "RFM-Images/RFM-S41-34.jpg"
+            "RFM images/RFM-S41-33.jpg", 
+            "RFM images/RFM-S41-34.jpg"
         ]
     },
     {
@@ -55,7 +55,7 @@ const questions = [
         ],
         correctAnswer: 0,
         category: "Limitation",
-        qrhImages: ["RFM-Images/RFM-S90-1.jpg"]
+        qrhImages: ["RFM images/RFM-S90-1.jpg"]
     },
     {
         question: "What is the correct response when a main gearbox oil temperature high warning occurs?",
@@ -301,8 +301,8 @@ const questions = [
         correctAnswer: 2,
         category: "Malfunction",
         qrhImages: [
-            "RFM-Images/RFM-S41-33.jpg", 
-            "RFM-Images/RFM-S41-34.jpg"
+            "RFM images/RFM-S41-33.jpg", 
+            "RFM images/RFM-S41-34.jpg"
         ]
     },
         {
@@ -316,8 +316,8 @@ const questions = [
         correctAnswer: 2,
         category: "Malfunction",
         qrhImages: [
-            "RFM-Images/RFM-S41-33.jpg", 
-            "RFM-Images/RFM-S41-34.jpg"
+            "RFM images/RFM-S41-33.jpg", 
+            "RFM images/RFM-S41-34.jpg"
         ]
     },
       {
@@ -330,7 +330,7 @@ const questions = [
         ],
         correctAnswer: 2,
         category: "Malfunction",
-        qrhImages: ["RFM-Images/RFM-S41-29.jpg"]
+        qrhImages: ["RFM images/RFM-S41-29.jpg"]
     },
     {
         question: "What should be done if the nose wheel is unlocked in Flight?",
