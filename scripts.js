@@ -30,6 +30,21 @@ const questions = [
         category: "Malfunction",
         qrhImages: ["QRH images/AW139-QRH_page (37).jpg"]
     },
+     {
+        question: "In case of a double DC generator failure during Winching, what effect the recovery cycle will have on the battery endurance time?",
+        choices: [
+            "Reduce it by 10 min",
+            "Reduce it to 10 min",
+            "Reduce it by 50%",
+            "No effect on battery endurance"
+        ],
+        correctAnswer: 1,
+        category: "Malfunction",
+        qrhImages: [
+            "RFM-Images/RFM-S41-33.jpg", 
+            "RFM-Images/RFM-S41-34.jpg"
+        ]
+    },
     {
         question: "What is the maximum allowable gross weight for the AW139?",
         choices: [
