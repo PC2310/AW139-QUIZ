@@ -332,6 +332,21 @@ const questions = [
         category: "Malfunction",
         qrhImages: ["RFM images/RFM-S41-29.jpg"]
     },
+          {
+        question: "When flying near a thunderstorm, what is the minimum distance a pilot should maintain?",
+        choices: [
+            "2 NM",
+            "5 NM",
+            "10 NM",
+            "1 NM"
+        ],
+        correctAnswer: 1,
+        category: "SOP",
+        qrhImages: [
+            "OM images/OM page 139.jpg",
+            "OM images/OM page 140.jpg"
+        ]
+    },
     {
         question: "What should be done if the nose wheel is unlocked in Flight?",
         choices: [
