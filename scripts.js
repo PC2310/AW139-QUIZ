@@ -23,7 +23,7 @@ const questions = [
         choices: [
             "Increase power",
             "Reduce speed",
-            "Adjust the collective to maintain RPM",
+            "Lower the collective to maintain RPM",
             "Land immediately"
         ],
         correctAnswer: 2,
@@ -60,7 +60,7 @@ const questions = [
     {
         question: "What is the correct response when a main gearbox oil temperature high warning occurs?",
         choices: [
-            "Reduce airspeed and land as soon as possible",
+            "Reduce power and land as soon as possible",
             "Increase collective pitch to reduce temperature",
             "Continue flight and monitor the temperature",
             "Shut down the engines immediately"
@@ -84,7 +84,7 @@ const questions = [
     {
         question: "What is the procedure when a fire is detected in the cockpit during flight?",
         choices: [
-            "Perform a controlled descent and emergency landing",
+            "Declare an emergency and prepare to land as soon as possible",
             "Shut down all electrical systems",
             "Extinguish the fire and continue flying",
             "Immediately initiate a rapid climb"
@@ -190,7 +190,7 @@ const questions = [
         qrhImages: ["QRH images/AW139-QRH_page (39).jpg"]
     },
     {
-        question: "What is the maximum operating altitude for the AW139 above 6400kg?",
+        question: "What is the maximum operating altitude for the AW139 between 6400kg and 6800kg?",
         choices: [
             "20,000 ft Hp or Hd",
             "15,000 ft Hd",
