@@ -343,8 +343,8 @@ const questions = [
         correctAnswer: 1,
         category: "SOP",
         qrhImages: [
-            "OM images/OM page 139.jpg",
-            "OM images/OM page 140.jpg"
+            "OM images/OM page 123.jpg",
+            "OM images/OM page 124.jpg"
         ]
     },
     {
