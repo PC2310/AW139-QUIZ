@@ -358,6 +358,18 @@ const questions = [
         correctAnswer: 2,
         category: "Malfunction",
         qrhImages: ["QRH images/AW139-QRH_page (102).jpg"]
+    },
+     {
+        question: "During a Patrol, what is the minimum Flight altitude over built up areas?",
+        choices: [
+            "500ft aboce the highest obstacle",
+            "600ft aboce the highest obstacle",
+            "700ft aboce the highest obstacle",
+            "1000ft aboce the highest obstacle"
+        ],
+        correctAnswer: 3,
+        category: "SOP",
+        qrhImages: ["OM page 91.jpg"]
     }
 ];
 
