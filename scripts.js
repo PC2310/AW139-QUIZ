@@ -367,9 +367,9 @@ const questions = [
             "700ft aboce the highest obstacle",
             "1000ft aboce the highest obstacle"
         ],
-        correctAnswer: 3,
+        correctAnswer: 2,
         category: "SOP",
-        qrhImages: ["OM page 91.jpg"]
+        qrhImages: ["OM images/OM page 91.jpg"]
     }
 ];
 
