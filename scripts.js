@@ -9,7 +9,7 @@ const questions = [
     {
         question: "What is the procedure for a double engine failure during flight?",
         choices: [
-            "Autorotation entry and landing procedure",
+            "Autorotation and landing procedure",
             "Shut down engines and glide",
             "Maintain altitude until engines restart",
             "Climb to a safe height and restart"
