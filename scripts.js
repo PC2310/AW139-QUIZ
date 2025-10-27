@@ -264,7 +264,7 @@ const questions = [
             "QRH images/AW139-QRH_page (22).jpg",
             "QRH images/AW139-QRH_page (23).jpg",
             "QRH images/AW139-QRH_page (24).jpg"
-        ] // Changed from a string to an array
+        ]
     },
     {
         question: "What action should be taken in case of a baggage bay fire?",
