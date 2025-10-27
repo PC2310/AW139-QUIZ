@@ -291,7 +291,7 @@ const questions = [
         qrhImages: ["QRH images/AW139-QRH_page (25).jpg"]
     },
     {
-        question: "How are powered the 2 Hoists?",
+        question: "How are the 2 Hoists powered?",
         choices: [
             "MAIN and SEC by MAIN BUS 1",
             "MAIN and SEC by MAIN BUS 2",
@@ -370,6 +370,21 @@ const questions = [
         correctAnswer: 2,
         category: "SOP",
         qrhImages: ["OM images/OM page 91.jpg"]
+    },
+    {
+        question: "What is the normal Final Reserve Fuel?",
+        choices: [
+            "135kg day VFR, 175kg Night VFR or IFR",
+            "135kg VFR",
+            "200kg VFR/IFR",
+            "100kg day VFR, 135kg Night VFR or IFR"
+        ],
+        correctAnswer: 0,
+        category: "SOP",
+        qrhImages: [
+            "OM images/OM page 144.jpg"
+            "OM images/OM page 145.jpg" 
+        ]
     }
 ];
 
