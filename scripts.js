@@ -63,7 +63,7 @@ const questions = [
             "5º all directions",
             "15º all directions",
             "10º all directions",
-            "5º Nose up/downd 10º lateral"
+            "5º Nose up/down, 10º lateral"
         ],
         correctAnswer: 2,
         category: "Limitation",
