@@ -166,7 +166,7 @@ const questions = [
         qrhImages: ["QRH images/AW139-QRH_page (19).jpg"]
     },
      {
-        question: "What is the maximum ground speed with PARK BRAKE ON?",
+        question: "What is the maximum ground speed for landing with with park brake ON?",
         choices: [
             "2 kts",
             "10 kts",
