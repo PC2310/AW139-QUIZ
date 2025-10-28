@@ -57,6 +57,18 @@ const questions = [
         category: "Limitation",
         qrhImages: ["RFM images/RFM-S90-1.jpg"]
     },
+     {
+        question: "What are the slope take-off and landing limitations?",
+        choices: [
+            "5º all directions",
+            "15º all directions",
+            "10º all directions",
+            "5º Nose up/downd 10º lateral"
+        ],
+        correctAnswer: 2,
+        category: "Limitation",
+        qrhImages: ["RFM images/RFM-S90-4.jpg"]
+    },
     {
         question: "What is the correct response when a main gearbox oil temperature high warning occurs?",
         choices: [
