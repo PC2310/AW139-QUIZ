@@ -153,6 +153,18 @@ const questions = [
         category: "Limitation",
         qrhImages: ["QRH images/AW139-QRH_page (19).jpg"]
     },
+     {
+        question: "What is the maximum ground speed with PARK BRAKE ON?",
+        choices: [
+            "2 kts",
+            "10 kts",
+            "5 kts",
+            "15 kts"
+        ],
+        correctAnswer: 2,
+        category: "Limitation",
+        qrhImages: ["RFM images/RFM-S12-D5.jpg"]
+    },
     {
         question: "What is the procedure if the main battery overheats?",
         choices: [
